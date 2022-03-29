@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:DLUTToolBoxMobile.Views"
+       xmlns:local2="clr-namespace:DLUTToolBoxMobile"
+       Title="DLUTToolBoxMobile"
+       x:Class="DLUTToolBoxMobile.AppShell"
+       BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.ForegroundColor" Value="Transparent"/>
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="White"/>
+                <Setter Property="Shell.UnselectedColor" Value="White" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{AppThemeBinding Light=White, Dark=Black}"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light=White, Dark=Black}"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light=White, Dark=Black}"/>
+            </Style>
+
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}">
+            </Style>
+            
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+            
+            <Style Class="FlyoutItemLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White"></Setter>
+            </Style>
+
+            <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{AppThemeBinding Light=White, Dark=Black}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.FontSize" Value="18" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.Margin" Value="0,0,0,0" />
+                                    <Setter TargetName="FlyoutItemImage" Property="Image.HeightRequest" Value="30" />
+                                    <Setter TargetName="FlyoutItemImage" Property="Image.WidthRequest" Value="30" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Selected">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary}" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.FontSize" Value="20" />
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.Margin" Value="0,0,0,0" />
+                                    <Setter TargetName="FlyoutItemImage" Property="Image.HeightRequest" Value="30" />
+                                    <Setter TargetName="FlyoutItemImage" Property="Image.WidthRequest" Value="30" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+
+            <!--<Style Class="MenuItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter TargetName="FlyoutItemLabel" Property="Label.TextColor" Value="{StaticResource Primary}" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>-->
+        </ResourceDictionary>
+    </Shell.Resources>
+    
+    <FlyoutItem Title="信息总览" Icon="Overview.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Overview}" />
+    </FlyoutItem>
+    <FlyoutItem Title="网络工具" Icon="Network.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Network}" />
+    </FlyoutItem>
+    <FlyoutItem Title="寝室电费" Icon="Electricity.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Electricity}" />
+    </FlyoutItem>
+    <FlyoutItem Title="考试教务" Icon="Exam.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Exam}" />
+    </FlyoutItem>
+    <FlyoutItem Title="学习生活" Icon="Study.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Study}" />
+    </FlyoutItem>
+    <FlyoutItem Title="办事大厅" Icon="WorkSpace.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:WorkSpace}" />
+    </FlyoutItem>
+    <FlyoutItem Title="图书馆" Icon="Library.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Library}" />
+    </FlyoutItem>
+    <FlyoutItem Title="其它系统" Icon="Other.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Other}" />
+    </FlyoutItem>
+    <FlyoutItem Title="参数配置" Icon="Settings.png">
+        <ShellContent ContentTemplate="{DataTemplate local2:Settings}" />
+    </FlyoutItem>
+    <FlyoutItem Title="关于软件" Icon="icon_about.png">
+        <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+    </FlyoutItem>
+    <MenuItem Text="退出程序" StyleClass="MenuItemLayoutStyle" Clicked="OneExitClocked"  IconImageSource="power.png">
+    </MenuItem>
+    <MenuItem Text="" StyleClass="MenuItemLayoutStyle">
+    </MenuItem>
+    <MenuItem Text="" StyleClass="MenuItemLayoutStyle">
+    </MenuItem>
+    <MenuItem Text="" StyleClass="MenuItemLayoutStyle">
+    </MenuItem>
+    <MenuItem Text="" StyleClass="MenuItemLayoutStyle">
+    </MenuItem>
+    <MenuItem Text="" StyleClass="MenuItemLayoutStyle">
+    </MenuItem>
+</Shell>

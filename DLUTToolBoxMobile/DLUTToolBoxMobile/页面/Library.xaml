@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.Library"
+             Title="图书馆"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <ContentPage.Content>
+        <StackLayout Margin="10,20,10,10">
+            <Button Text="座位预约记录" VerticalOptions="Start" FontSize="26" x:Name="Record" Clicked="Record_Clicked"  Margin="0,10,0,0"/>
+            <Button Text="资源列表" VerticalOptions="Start" FontSize="26" x:Name="Resource" Clicked="Resource_Clicked" Margin="0,10,0,0"/>
+            <Button Text="知网搜索" VerticalOptions="Start" FontSize="26" x:Name="ZhiWang" Clicked="ZhiWang_Clicked" Margin="0,10,0,0"/>
+            <Button Text="万方搜索" VerticalOptions="Start" FontSize="26" x:Name="WanFang" Clicked="WanFang_Clicked" Margin="0,10,0,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

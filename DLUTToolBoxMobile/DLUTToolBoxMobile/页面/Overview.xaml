@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.Overview"
+             Title="信息总览"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <ContentPage.Content>
+        <StackLayout>
+            <WebView Source="https://api.m.dlut.edu.cn/login?client_id=9qXqHnRQuhhViycC&amp;redirect_uri=https%3a%2f%2flightapp.m.dlut.edu.cn%2fcheck%2fcourseschedule&amp;response_type=code" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" x:Name="Web" Navigating="Web_Navigating" Navigated="Web_Navigated" BackgroundColor="Transparent"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

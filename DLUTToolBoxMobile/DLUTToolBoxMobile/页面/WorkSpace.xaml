@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.WorkSpace"
+             Title="办事大厅"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Gray}">
+    <ContentPage.Content>
+        <StackLayout>
+            <WebView Source="https://sso.dlut.edu.cn/cas/login?service=https%3A%2F%2Fehall.dlut.edu.cn%2Ffp%2Fview%3Fm%3Dfp#act=fp/formHome" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" x:Name="Web" Navigated="Web_Navigated" Navigating="Web_Navigating"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.Views.AboutPage"
+             Title="关于软件"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource Accent}" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
+                <ContentView Padding="0,40,0,40" VerticalOptions="FillAndExpand">
+                    <Image Source="ToolBoxicon.png" VerticalOptions="Center" HeightRequest="188" />
+                </ContentView>
+            </StackLayout>
+        </StackLayout>
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="DLUTToolBoxMobile" FontSize="Title"/>
+                <Label Text="大工工具箱的手机版本&#13;可能仍有问题，请及时反馈！&#13;本程序代码著作权归Shirai_Kuroko所有，禁止进行反编译和逆向工程。本软件涉及到的所有页面数据内容归大连理工大学版权所有，涉及到的用户数据均储存在您计算及本地和大连理工大学服务器中，不存在其他远程储存位置，所有页面均为正常情况下Web可访问界面，所有数据交互均由Web实现，不涉及与服务器后端进行交互（校园网登录除外）。一切浏览记录均可由您的组织或者网络管理员检查，如果不信任本软件，您可以随时卸载" FontSize="16" Padding="0,0,0,0"/>
+                <Label FontSize="16" Padding="0,0,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="作者:"/>
+                                <Span Text="Shirai_Kuroko" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="0,10,0,0" Text="联系作者"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+                <Button Margin="0,10,0,0" Text="Github"
+                        Clicked="Button_Clicked_1"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

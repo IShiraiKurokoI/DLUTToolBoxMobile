@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.Exam"
+             Title="考试教务"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10,20,10,20">
+                <Button Text="教务主页" VerticalOptions="Start" FontSize="26" x:Name="MainPage" Clicked="MainPage_Clicked"/>
+                <Button Text="选课系统" VerticalOptions="Start" FontSize="26" x:Name="CourseSelect" Clicked="CourseSelect_Clicked" Margin="0,10,0,0"/>
+                <Button Text="考试信息" VerticalOptions="Start" FontSize="26" x:Name="ExamInfo" Clicked="ExamInfo_Clicked" Margin="0,10,0,0"/>
+                <Button Text="成绩信息" VerticalOptions="Start" FontSize="26" x:Name="Score" Clicked="Score_Clicked" Margin="0,10,0,0"/>
+                <Button Text="缓考系统" VerticalOptions="Start" FontSize="26" x:Name="Delay" Clicked="Delay_Clicked" Margin="0,10,0,0"/>
+                <Button Text="评教系统" VerticalOptions="Start" FontSize="26" x:Name="Evaluation" Clicked="Evaluation_Clicked" Margin="0,10,0,0"/>
+                <Button Text="学校校历" VerticalOptions="Start" FontSize="26" x:Name="Calendar" Clicked="Calendar_Clicked" Margin="0,10,0,0"/>
+                <Button Text="公共通知" VerticalOptions="Start" FontSize="26" x:Name="Notice" Clicked="Notice_Clicked" Margin="0,10,0,0"/>
+                <Button Text="研究生系统" VerticalOptions="Start" FontSize="26" x:Name="YanJiuSheng" Clicked="YanJiuSheng_Clicked" Margin="0,10,0,0"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

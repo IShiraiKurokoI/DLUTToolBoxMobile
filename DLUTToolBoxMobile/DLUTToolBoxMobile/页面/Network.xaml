@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.Network"
+             xmlns:local="clr-namespace:DLUTToolBoxMobile"
+             Title="网络工具"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Margin="10">
+            <StackLayout Orientation="Horizontal" x:Name="EDANetShell" IsVisible="true">
+                <Button Text="手动连接" HorizontalOptions="StartAndExpand" FontSize="30" HeightRequest="100" x:Name="Manual_Connect" Clicked="Manual_Connect_Clicked"/>
+                <Button Text="注销连接" HorizontalOptions="EndAndExpand" FontSize="30" HeightRequest="100" x:Name="Manual_Disconnect" Clicked="Manual_Disconnect_Clicked"/>
+            </StackLayout>
+            <Button Text="网络自助" VerticalOptions="Start" FontSize="30" x:Name="SelfService" Clicked="SelfService_Clicked"/>
+            <Button Text="网费充值" VerticalOptions="End" FontSize="30" x:Name="Charge" Clicked="Charge_Clicked"/>
+            <Button Text="刷新状态" VerticalOptions="End" FontSize="30" x:Name="Refresh" Clicked="Refresh_Clicked"/>
+            <Label Text="加载信息中，请稍后。。。。" VerticalOptions="Start" HorizontalOptions="Start" x:Name="Info"/>
+            <WebView Source="https://webvpn.dlut.edu.cn/login" VerticalOptions="EndAndExpand" x:Name="NetInfo" HeightRequest="500" WidthRequest="100" Navigating="NetInfo_Navigating" IsVisible="False"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

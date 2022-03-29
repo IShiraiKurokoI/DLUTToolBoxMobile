@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6+Q9aNrPh2dcX0QvHWMvJHQbIchiYpNp/K0XBcM0vhxbmcY9V6cXEJAi9ynSPJ4UWV4J4otfQPiEsxZY3DruCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Shirai_Kuroko\\source\\repos\\DLUTToolBoxMobile\\DLUTToolBoxMobile\\DLUTToolBoxMobile.iOS\\DLUTToolBoxMobile.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shirai_Kuroko\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Shirai_Kuroko\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Shirai_Kuroko\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

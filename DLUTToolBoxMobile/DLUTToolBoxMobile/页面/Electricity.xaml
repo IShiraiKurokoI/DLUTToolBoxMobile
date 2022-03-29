@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DLUTToolBoxMobile.Electricity"
+             xmlns:local="clr-namespace:DLUTToolBoxMobile"
+             Title="寝室电费"
+             BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
+    <ContentPage.Content>
+        <StackLayout Margin="10,20,10,10">
+            <Button Text="玉兰卡" VerticalOptions="Start" FontSize="20" x:Name="Ecard" Clicked="Ecard_Clicked"/>
+            <Button Text="电费充值" VerticalOptions="Start" FontSize="20" x:Name="Charge" Clicked="Charge_Clicked"/>
+            <Button Text="刷新电费" VerticalOptions="Start" FontSize="20" x:Name="Refresh" Clicked="Refresh_Clicked"/>
+            <Label Text="正在加载数据。。。" VerticalOptions="Start" HorizontalOptions="Start" x:Name="ElectricityInfo" FontSize="23"/>
+            <WebView WidthRequest="300" HeightRequest="1080" VerticalOptions="StartAndExpand" Source="https://api.m.dlut.edu.cn/oauth/authorize?client_id=19b32196decf419a&amp;redirect_uri=https%3A%2F%2Fcard.m.dlut.edu.cn%2Fhomerj%2FopenRjOAuthPage&amp;response_type=code&amp;scope=base_api&amp;state=weishao" x:Name="EleInfo" Navigating="EleInfo_Navigating" Navigated="EleInfo_Navigated" IsVisible="false"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
