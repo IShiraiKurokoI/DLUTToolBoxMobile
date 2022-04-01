@@ -113,8 +113,15 @@ namespace DLUTToolBoxMobile
         }
         private void Refresh_Clicked(object sender, EventArgs e)
         {
-            EleInfo.Reload();
-            DependencyService.Get<IToast>().ShortAlert("正在更新信息");
+            try
+            {
+                EleInfo.Reload();
+                DependencyService.Get<IToast>().ShortAlert("正在更新信息");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
         }
 
         private void Ecard_Clicked(object sender, EventArgs e)

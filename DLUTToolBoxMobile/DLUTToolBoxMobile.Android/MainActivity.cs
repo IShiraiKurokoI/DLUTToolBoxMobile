@@ -59,7 +59,6 @@ namespace DLUTToolBoxMobile.Droid
             new Handler().PostDelayed(() => {
                 doubleBackToExitPressedOnce = false;
             }, 2000);
-
         }
     }
 }
