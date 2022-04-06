@@ -17,7 +17,7 @@
 
 	/* 1: DLUTToolBoxMobile.dll */
 	/* uncompressed_file_size */
-	.word	119296
+	.word	121344
 	/* loaded */
 	.byte	0
 	/* data */

@@ -24,6 +24,7 @@ namespace DLUTToolBoxMobile.Droid
             Xamarin.Forms.DependencyService.Register<DLUTToolBoxMobile.IToast, ToastImpl>();
             Xamarin.Forms.DependencyService.Register<DLUTToolBoxMobile.IPay, PayImpl>();
             Xamarin.Forms.DependencyService.Register<DLUTToolBoxMobile.INotify, NotifyImpl>();
+            Xamarin.Forms.DependencyService.Register<DLUTToolBoxMobile.IVersion, VersionImpl>();
             NetworkCallbackImpl networkCallback = new NetworkCallbackImpl();
             NetworkRequest.Builder builder = new NetworkRequest.Builder();
             NetworkRequest request = builder.Build();

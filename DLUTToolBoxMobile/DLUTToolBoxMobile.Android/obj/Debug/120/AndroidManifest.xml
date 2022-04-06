@@ -5,11 +5,18 @@
     Changes to this file may cause incorrect behavior and will be lost if
     the contents are regenerated.
     -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.Shirai_Kuroko.DLUTToolBoxMobile" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.2" package="com.Shirai_Kuroko.DLUTToolBoxMobile" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="28" android:targetSdkVersion="31" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+  <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <application android:label="DLUTToolBoxMobile" android:theme="@style/MainTheme" android:usesCleartextTraffic="true" android:icon="@drawable/toolboxicon" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="DLUTToolBox手机版" android:theme="@style/MainTheme" android:name="crc645644bb523fb280e7.MainActivity" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="DLUTToolBox手机版" android:noHistory="true" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="crc645644bb523fb280e7.SplashActivity" android:exported="true">

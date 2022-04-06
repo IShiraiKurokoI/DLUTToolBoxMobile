@@ -41,7 +41,7 @@
                         Clicked="Button_Clicked"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />
-                <Button Margin="0,10,0,0" Text="Github"
+                <Button Margin="0,4,0,0" Text="Github"
                         Clicked="Button_Clicked_1"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="White" />

@@ -61,6 +61,10 @@ namespace DLUTToolBoxMobile
                 {
                     Application.Current.Properties["DarkMode"] = "false";
                 }
+                if (Application.Current.Properties.ContainsKey("DoAutoUpdate") == false)
+                {
+                    Application.Current.Properties["DoAutoUpdate"] = "true";
+                }
                 if (Application.Current.Properties.ContainsKey("DarkMode") == true)
                 {
                     if (Xamarin.Forms.Application.Current.RequestedTheme == OSAppTheme.Dark)

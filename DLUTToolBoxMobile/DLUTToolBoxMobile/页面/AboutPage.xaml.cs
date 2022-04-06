@@ -35,7 +35,7 @@ namespace DLUTToolBoxMobile.Views
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-            Browser.OpenAsync("https://github.com/MuoRanLY/DLUTToolBoxMobile");
+            Launcher.OpenAsync("https://github.com/MuoRanLY/DLUTToolBoxMobile");
         }
     }
 }
