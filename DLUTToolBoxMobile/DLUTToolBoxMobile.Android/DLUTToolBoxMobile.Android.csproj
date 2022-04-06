@@ -67,6 +67,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CloseImpl.cs" />
     <Compile Include="CustomWebViewRenderer.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="NetworkCallbackImpl.cs" />

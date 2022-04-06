@@ -104,7 +104,7 @@
     <FlyoutItem Title="关于软件" Icon="icon_about.png">
         <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
-    <MenuItem Text="退出程序" StyleClass="MenuItemLayoutStyle" Clicked="OneExitClocked"  IconImageSource="power.png">
+    <MenuItem Text="退出程序" StyleClass="MenuItemLayoutStyle" Clicked="OnExitClicked"  IconImageSource="power.png">
     </MenuItem>
     <MenuItem Text="" StyleClass="MenuItemLayoutStyle">
     </MenuItem>

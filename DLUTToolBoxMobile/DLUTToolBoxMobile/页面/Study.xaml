@@ -16,6 +16,7 @@
                 <Button Text="图书馆座位预约" VerticalOptions="Start" FontSize="26" x:Name="Seat" Clicked="Seat_Clicked" Margin="0,10,0,0"/>
                 <Button Text="外出报备" VerticalOptions="Start" FontSize="26" x:Name="Report" Clicked="Report_Clicked" Margin="0,10,0,0"/>
                 <Button Text="校内通知" VerticalOptions="Start" FontSize="26" x:Name="Notice" Clicked="Notice_Clicked" Margin="0,10,0,0"/>
+                <Label />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

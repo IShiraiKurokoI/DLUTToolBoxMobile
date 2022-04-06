@@ -12,9 +12,9 @@ namespace DLUTToolBoxMobile
             InitializeComponent();
         }
 
-        private void OneExitClocked(object sender, EventArgs e)
+        private void OnExitClicked(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            DependencyService.Get<IClose>().CloseApp();
         }
     }
 }

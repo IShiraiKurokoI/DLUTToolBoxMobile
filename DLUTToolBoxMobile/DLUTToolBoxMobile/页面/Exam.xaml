@@ -16,6 +16,7 @@
                 <Button Text="学校校历" VerticalOptions="Start" FontSize="26" x:Name="Calendar" Clicked="Calendar_Clicked" Margin="0,10,0,0"/>
                 <Button Text="公共通知" VerticalOptions="Start" FontSize="26" x:Name="Notice" Clicked="Notice_Clicked" Margin="0,10,0,0"/>
                 <Button Text="研究生系统" VerticalOptions="Start" FontSize="26" x:Name="YanJiuSheng" Clicked="YanJiuSheng_Clicked" Margin="0,10,0,0"/>
+                <Label />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

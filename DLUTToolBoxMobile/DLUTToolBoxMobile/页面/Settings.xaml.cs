@@ -164,6 +164,7 @@ namespace DLUTToolBoxMobile
 
         private void CheckUpdate_Clicked(object sender, EventArgs e)
         {
+            DependencyService.Get<IToast>().ShortAlert("检查新版本中。。。。");
             UpdateChecker();
         }
 
@@ -198,7 +199,10 @@ namespace DLUTToolBoxMobile
                     }
                     else
                     {
-                        DependencyService.Get<IToast>().ShortAlert("您当前使用的已经是最新版本了！");
+                        Device.BeginInvokeOnMainThread(async () =>
+                        {
+                            DependencyService.Get<IToast>().ShortAlert("您当前使用的已经是最新版本了！");
+                        });
                     }
                 }
                 catch (NullReferenceException e)

@@ -17,7 +17,7 @@
 
 	/* 1: DLUTToolBoxMobile.dll */
 	/* uncompressed_file_size */
-	.word	121344
+	.word	127488
 	/* loaded */
 	.byte	0
 	/* data */
@@ -44,7 +44,7 @@
 
 	/* 4: Mono.Android.dll */
 	/* uncompressed_file_size */
-	.word	2172416
+	.word	2173440
 	/* loaded */
 	.byte	0
 	/* data */
