@@ -17,6 +17,22 @@ namespace DLUTToolBoxMobile
         {
             InitializeComponent();
             SettingsLoader();
+            DarkModeLoader();
+        }
+
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme=OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme=OSAppTheme.Light;
+                }
+            }
         }
 
         void SettingsLoader()
@@ -40,6 +56,17 @@ namespace DLUTToolBoxMobile
             if(Application.Current.Properties.ContainsKey("MailPassword") ==true)
             {
                 MailPassword.Text = Application.Current.Properties["MailPassword"].ToString();
+            }
+            if (Application.Current.Properties.ContainsKey("DarkMode") ==true)
+            {
+                if(Application.Current.Properties["DarkMode"].ToString()=="true")
+                {
+                    DarkMode.Text = "关闭黑夜模式";
+                }
+                else
+                {
+                    DarkMode.Text = "开启黑夜模式";
+                }
             }
             SettingsInitialized=true;
         }
@@ -95,6 +122,27 @@ namespace DLUTToolBoxMobile
                 UnionPassword.IsPassword = true;
                 NetworkPassword.IsPassword = true;
                 MailPassword.IsPassword = true;
+            }
+        }
+
+        private void DarkMode_Clicked(object sender, EventArgs e)
+        {
+            if(DarkMode.Text== "开启黑夜模式")
+            {
+                DarkMode.Text = "关闭黑夜模式";
+                if (SettingsInitialized == true)
+                    Application.Current.Properties["DarkMode"] = "true";
+                Application.Current.SavePropertiesAsync();
+                DarkModeLoader();
+
+            }
+            else
+            {
+                DarkMode.Text = "开启黑夜模式";
+                if (SettingsInitialized == true)
+                    Application.Current.Properties["DarkMode"] = "false";
+                Application.Current.SavePropertiesAsync();
+                DarkModeLoader();
             }
         }
     }

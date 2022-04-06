@@ -23,9 +23,24 @@ namespace DLUTToolBoxMobile
 			this.Title = name;
 			specialhandlenumber = sp;
 			Web.Source = uri;
+            DarkModeLoader();
 		}
 
-		string url = "";
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
+        string url = "";
 
         private void Web_Navigating(object sender, WebNavigatingEventArgs e)
         {

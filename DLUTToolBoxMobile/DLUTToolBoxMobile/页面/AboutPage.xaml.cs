@@ -11,8 +11,23 @@ namespace DLUTToolBoxMobile.Views
         public AboutPage()
         {
             InitializeComponent();
+            DarkModeLoader();
         }
 
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
         private void Button_Clicked(object sender, EventArgs e)
         {
             Browser.OpenAsync("https://space.bilibili.com/310144483");

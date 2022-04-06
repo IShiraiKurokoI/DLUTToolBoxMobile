@@ -37,92 +37,92 @@
 	.section	.rodata.map_aname.6,"aMS",%progbits,1
 	.type	.L.map_aname.6, %object
 .L.map_aname.6:
-	.asciz	"Xamarin.AndroidX.ViewPager"
-	.size	.L.map_aname.6, 27
+	.asciz	"DLUTToolBoxMobile.Android"
+	.size	.L.map_aname.6, 26
 
 	.section	.rodata.map_aname.7,"aMS",%progbits,1
 	.type	.L.map_aname.7, %object
 .L.map_aname.7:
-	.asciz	"Xamarin.AndroidX.Activity"
-	.size	.L.map_aname.7, 26
+	.asciz	"Xamarin.AndroidX.ViewPager"
+	.size	.L.map_aname.7, 27
 
 	.section	.rodata.map_aname.8,"aMS",%progbits,1
 	.type	.L.map_aname.8, %object
 .L.map_aname.8:
-	.asciz	"Xamarin.Essentials"
-	.size	.L.map_aname.8, 19
+	.asciz	"Xamarin.AndroidX.Activity"
+	.size	.L.map_aname.8, 26
 
 	.section	.rodata.map_aname.9,"aMS",%progbits,1
 	.type	.L.map_aname.9, %object
 .L.map_aname.9:
-	.asciz	"Mono.Android"
-	.size	.L.map_aname.9, 13
+	.asciz	"Xamarin.Essentials"
+	.size	.L.map_aname.9, 19
 
 	.section	.rodata.map_aname.10,"aMS",%progbits,1
 	.type	.L.map_aname.10, %object
 .L.map_aname.10:
-	.asciz	"Xamarin.AndroidX.Core"
-	.size	.L.map_aname.10, 22
+	.asciz	"Mono.Android"
+	.size	.L.map_aname.10, 13
 
 	.section	.rodata.map_aname.11,"aMS",%progbits,1
 	.type	.L.map_aname.11, %object
 .L.map_aname.11:
-	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
-	.size	.L.map_aname.11, 46
+	.asciz	"Xamarin.AndroidX.Core"
+	.size	.L.map_aname.11, 22
 
 	.section	.rodata.map_aname.12,"aMS",%progbits,1
 	.type	.L.map_aname.12, %object
 .L.map_aname.12:
-	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData.Core"
-	.size	.L.map_aname.12, 41
+	.asciz	"Xamarin.AndroidX.AppCompat.AppCompatResources"
+	.size	.L.map_aname.12, 46
 
 	.section	.rodata.map_aname.13,"aMS",%progbits,1
 	.type	.L.map_aname.13, %object
 .L.map_aname.13:
-	.asciz	"Xamarin.AndroidX.Legacy.Support.Core.UI"
-	.size	.L.map_aname.13, 40
+	.asciz	"Xamarin.AndroidX.Lifecycle.LiveData.Core"
+	.size	.L.map_aname.13, 41
 
 	.section	.rodata.map_aname.14,"aMS",%progbits,1
 	.type	.L.map_aname.14, %object
 .L.map_aname.14:
-	.asciz	"Xamarin.AndroidX.SavedState"
-	.size	.L.map_aname.14, 28
+	.asciz	"Xamarin.AndroidX.Legacy.Support.Core.UI"
+	.size	.L.map_aname.14, 40
 
 	.section	.rodata.map_aname.15,"aMS",%progbits,1
 	.type	.L.map_aname.15, %object
 .L.map_aname.15:
-	.asciz	"Xamarin.Google.Android.Material"
-	.size	.L.map_aname.15, 32
+	.asciz	"Xamarin.AndroidX.SavedState"
+	.size	.L.map_aname.15, 28
 
 	.section	.rodata.map_aname.16,"aMS",%progbits,1
 	.type	.L.map_aname.16, %object
 .L.map_aname.16:
-	.asciz	"Xamarin.AndroidX.DrawerLayout"
-	.size	.L.map_aname.16, 30
+	.asciz	"Xamarin.Google.Android.Material"
+	.size	.L.map_aname.16, 32
 
 	.section	.rodata.map_aname.17,"aMS",%progbits,1
 	.type	.L.map_aname.17, %object
 .L.map_aname.17:
-	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.asciz	"Xamarin.AndroidX.DrawerLayout"
 	.size	.L.map_aname.17, 30
 
 	.section	.rodata.map_aname.18,"aMS",%progbits,1
 	.type	.L.map_aname.18, %object
 .L.map_aname.18:
-	.asciz	"Xamarin.AndroidX.AppCompat"
-	.size	.L.map_aname.18, 27
+	.asciz	"Xamarin.AndroidX.RecyclerView"
+	.size	.L.map_aname.18, 30
 
 	.section	.rodata.map_aname.19,"aMS",%progbits,1
 	.type	.L.map_aname.19, %object
 .L.map_aname.19:
-	.asciz	"FormsViewGroup"
-	.size	.L.map_aname.19, 15
+	.asciz	"Xamarin.AndroidX.AppCompat"
+	.size	.L.map_aname.19, 27
 
 	.section	.rodata.map_aname.20,"aMS",%progbits,1
 	.type	.L.map_aname.20, %object
 .L.map_aname.20:
-	.asciz	"DLUTToolBoxMobile.Android"
-	.size	.L.map_aname.20, 26
+	.asciz	"FormsViewGroup"
+	.size	.L.map_aname.20, 15
 
 	.section	.rodata.map_aname.21,"aMS",%progbits,1
 	.type	.L.map_aname.21, %object

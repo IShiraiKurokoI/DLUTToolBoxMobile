@@ -57,6 +57,18 @@ namespace DLUTToolBoxMobile
                 {
                     Application.Current.Properties["MailPassword"] = "";
                 }
+                if (Application.Current.Properties.ContainsKey("DarkMode") == false)
+                {
+                    Application.Current.Properties["DarkMode"] = "false";
+                }
+                if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+                {
+                    if (Xamarin.Forms.Application.Current.RequestedTheme == OSAppTheme.Dark)
+                    {
+                        Application.Current.Properties["DarkMode"] = "true";
+                        Application.Current.SavePropertiesAsync();
+                    }
+                }
             });
         }
     }

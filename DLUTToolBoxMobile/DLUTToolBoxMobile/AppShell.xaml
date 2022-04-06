@@ -80,7 +80,7 @@
     <FlyoutItem Title="网络工具" Icon="Network.png">
         <ShellContent ContentTemplate="{DataTemplate local2:Network}" />
     </FlyoutItem>
-    <FlyoutItem Title="寝室电费" Icon="Electricity.png">
+    <FlyoutItem Title="日常缴费" Icon="Electricity.png">
         <ShellContent ContentTemplate="{DataTemplate local2:Electricity}" />
     </FlyoutItem>
     <FlyoutItem Title="考试教务" Icon="Exam.png">

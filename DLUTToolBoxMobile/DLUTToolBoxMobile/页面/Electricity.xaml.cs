@@ -17,8 +17,23 @@ namespace DLUTToolBoxMobile
         public Electricity()
         {
             InitializeComponent();
+            DarkModeLoader();
         }
 
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
         string url = "";
         private void EleInfo_Navigating(object sender, WebNavigatingEventArgs e)
         {

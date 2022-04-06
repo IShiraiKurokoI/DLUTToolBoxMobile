@@ -15,6 +15,7 @@ namespace DLUTToolBoxMobile
         public WorkSpace()
         {
             InitializeComponent();
+            DarkModeLoader();
             try
             {
                 Web.Reload();
@@ -22,6 +23,22 @@ namespace DLUTToolBoxMobile
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
+            }
+        }
+
+
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
             }
         }
 

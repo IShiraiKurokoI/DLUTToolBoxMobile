@@ -14,7 +14,7 @@
             <Button Text="网络自助" VerticalOptions="Start" FontSize="30" x:Name="SelfService" Clicked="SelfService_Clicked"/>
             <Button Text="网费充值" VerticalOptions="End" FontSize="30" x:Name="Charge" Clicked="Charge_Clicked"/>
             <Button Text="刷新状态" VerticalOptions="End" FontSize="30" x:Name="Refresh" Clicked="Refresh_Clicked"/>
-            <Label Text="加载信息中，请稍后。。。。" VerticalOptions="Start" HorizontalOptions="Start" x:Name="Info"/>
+            <Label Text="加载信息中，请稍后。。。。" VerticalOptions="Start" HorizontalOptions="Start" x:Name="Info"  TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
             <WebView Source="https://webvpn.dlut.edu.cn/login" VerticalOptions="EndAndExpand" x:Name="NetInfo" HeightRequest="500" WidthRequest="100" Navigating="NetInfo_Navigating" IsVisible="False"/>
         </StackLayout>
     </ContentPage.Content>

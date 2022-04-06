@@ -16,6 +16,7 @@ namespace DLUTToolBoxMobile
         {
             InitializeComponent();
             SettingsChecker();
+            DarkModeLoader();
             try
             {
                 Web.Reload();
@@ -25,12 +26,29 @@ namespace DLUTToolBoxMobile
                 Console.WriteLine(ex.Message);
             }
         }
+
+
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
         async Task SettingsChecker()
         {
             Task.Run(() => {
                 if (Application.Current.Properties["Uid"].ToString().Length * Application.Current.Properties["UnionPassword"].ToString().Length * Application.Current.Properties["NetworkPassword"].ToString().Length == 0)
                 {
                     DisplayAlert("提示：", "请先完善参数配置中的相关信息！\n向右侧滑或点击左上可以显示导航栏", "知道了");
+                    Navigation.PushAsync(new Settings());
                 }
             });
         }

@@ -6,18 +6,19 @@
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="所有更改均会自动保存" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10"/>
-            <Label Text="学工号：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,10,0,0"/>
-            <Entry Placeholder="学工号" x:Name="Uid" TextChanged="Uid_TextChanged" Keyboard="Numeric"/>
-            <Label Text="统一认证密码：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
-            <Entry Placeholder="统一认证密码" x:Name="UnionPassword" TextChanged="UnionPassword_TextChanged" IsPassword="True"/>
-            <Label Text="校园网密码：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
-            <Entry Placeholder="校园网密码" x:Name="NetworkPassword" TextChanged="NetworkPassword_TextChanged" IsPassword="True"/>
-            <Label Text="大工邮箱名称：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
-            <Entry Placeholder="大工邮箱名称" x:Name="MailAddress" TextChanged="MailAddress_TextChanged"/>
-            <Label Text="大工邮箱密码：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
-            <Entry Placeholder="大工邮箱密码" x:Name="MailPassword" TextChanged="MailPassword_TextChanged" IsPassword="True"/>
-            <Button x:Name="ShowPasswordButton" Text="显示密码" Clicked="ShowPasswordButton_Clicked" Margin="10,0,10,0"/>
+            <Label Text="所有更改均会自动保存" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Label Text="学工号：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,10,0,0" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Entry Placeholder="学工号" x:Name="Uid" TextChanged="Uid_TextChanged" Keyboard="Numeric" TextColor="{AppThemeBinding Light=Black, Dark=White}" PlaceholderColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Label Text="统一认证密码：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Entry Placeholder="统一认证密码" x:Name="UnionPassword" TextChanged="UnionPassword_TextChanged" IsPassword="True" TextColor="{AppThemeBinding Light=Black, Dark=White}" PlaceholderColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Label Text="校园网密码：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Entry Placeholder="校园网密码" x:Name="NetworkPassword" TextChanged="NetworkPassword_TextChanged" IsPassword="True" TextColor="{AppThemeBinding Light=Black, Dark=White}" PlaceholderColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Label Text="大工邮箱名称：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Entry Placeholder="大工邮箱名称" x:Name="MailAddress" TextChanged="MailAddress_TextChanged" TextColor="{AppThemeBinding Light=Black, Dark=White}" PlaceholderColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Label Text="大工邮箱密码：" VerticalTextAlignment="Start" HorizontalTextAlignment="Start" Margin="10,0,0,0" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Entry Placeholder="大工邮箱密码" x:Name="MailPassword" TextChanged="MailPassword_TextChanged" IsPassword="True" TextColor="{AppThemeBinding Light=Black, Dark=White}" PlaceholderColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Button x:Name="ShowPasswordButton" Text="显示密码" Clicked="ShowPasswordButton_Clicked" Margin="10,0,10,0" TextColor="{AppThemeBinding Light=Black, Dark=White}"/>
+            <Button x:Name="DarkMode" Text="开启黑夜模式" Margin="10,0,10,0" Clicked="DarkMode_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

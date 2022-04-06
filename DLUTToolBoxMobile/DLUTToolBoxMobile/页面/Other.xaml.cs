@@ -15,8 +15,23 @@ namespace DLUTToolBoxMobile
         public Other()
         {
             InitializeComponent();
+            DarkModeLoader();
         }
 
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
         private void XueGong_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new BrowserWindow("学工系统", "https://webvpn.dlut.edu.cn/http/77726476706e69737468656265737421f4e2558f267e6c5c6b1cc7a99c406d36b7/cas", 16));

@@ -21,10 +21,27 @@ namespace DLUTToolBoxMobile
         public Network()
         {
             InitializeComponent();
+            Manual_Connect.WidthRequest = ((this.Width - 30) / 2);
+            Manual_Disconnect.WidthRequest = ((this.Width - 30) / 2);
+            DarkModeLoader();
             NetInfo.IsVisible = false;
             LoadNetInfo();
         }
 
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
         bool datawarn = false;
         async Task LoadNetInfo()
         {
@@ -83,8 +100,6 @@ namespace DLUTToolBoxMobile
                         {
                             Device.BeginInvokeOnMainThread(() => {
                                 EDANetShell.IsVisible = true;
-                                Manual_Connect.WidthRequest = ((this.Width - 30) / 2);
-                                Manual_Disconnect.WidthRequest = ((this.Width - 30) / 2);
                                 InsideEDA = true;
                                 DependencyService.Get<IToast>().ShortAlert("您已连接校园网，但并未登录");
                                 NetInfo.IsVisible = false;

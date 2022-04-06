@@ -15,8 +15,23 @@ namespace DLUTToolBoxMobile
         public Library()
         {
             InitializeComponent();
+            DarkModeLoader();
         }
 
+        void DarkModeLoader()
+        {
+            if (Application.Current.Properties.ContainsKey("DarkMode") == true)
+            {
+                if (Application.Current.Properties["DarkMode"].ToString() == "true")
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Dark;
+                }
+                else
+                {
+                    Xamarin.Forms.Application.Current.UserAppTheme = OSAppTheme.Light;
+                }
+            }
+        }
         private void Record_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new BrowserWindow("图书馆预约记录", "https://sso.dlut.edu.cn/cas/login?service=http://seat.lib.dlut.edu.cn/yanxiujian/client/login.php?redirect=areaSelectSeat.php", 13));
