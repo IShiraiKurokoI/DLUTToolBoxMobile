@@ -13,7 +13,6 @@ using Android.Widget;
 using DLUTToolBoxMobile.Droid;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using AWebView = Android.Webkit.WebView;
 
 [assembly: ExportRenderer(typeof(Xamarin.Forms.WebView), typeof(CustomWebViewRenderer))]
 namespace DLUTToolBoxMobile.Droid

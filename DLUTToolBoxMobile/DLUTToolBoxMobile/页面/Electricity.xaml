@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DLUTToolBoxMobile.Electricity"
              xmlns:local="clr-namespace:DLUTToolBoxMobile"
-             Title="寝室电费"
+             Title="日常缴费"
              BackgroundColor="{AppThemeBinding Light=White, Dark=Black}">
     <ContentPage.Content>
         <StackLayout Margin="10,20,10,10">
